@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+info{
+    display: flex;
+   justify-content: flex-end;
+}
+.login_btn{
+    position: fixed;
+    display:flex;
+   align-items: center;
+   justify-content: center;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border:solid aliceblue 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow:5px 5px 10px 20px rgb(33, 228, 228); 
+    background-color: white;
+    animation-name: user;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+   
+    z-index:2
+}
+@keyframes info{
+    0%{bottom:0px;}
+    100%{bottom:3px;}
+}
+header{
+  
+    width:100vw;
+    display:flex;
+    margin:0px;
+background-color: aliceblue;
+box-shadow: 5px 5px 15px 5px rgb(33, 228, 228);
+    position: fixed;
+    z-index:1;
+   
+}
+header h3{
+  
+    margin-left:20px;
+    color:black;
+    animation-name: animateHeader;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes animateHeader{
+    0%{color:rgb(158, 83, 83)}
+    25%{color:rgb(192, 53, 53)}
+    50%{color:lightblue}
+    75%{color:rgb(50, 50, 182)}
+    100%{color:blueviolet}
+
+}
+con1,con2{
+    display:flex;
+    flex-direction: row;
+    margin-top:100px;
+   
+    justify-content: space-around;
+    z-index:-1;
+}
+con2 div{
+    margin-top:20px;
+    align-items: center;
+     margin-left:16px;
+     position:relative;
+     height:200px;
+     width:200px;
+     border:solid aliceblue 2px;
+     box-shadow: 10px 10px 10px 10px lightblue;
+     text-align: center;
+     font-size: large;
+     animation-name: animateConDiv;
+     animation-duration: 4s;
+     animation-fill-mode: both;
+
+}
+btn{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top:100px;
+  
+}
+button{
+    height:35px;
+    width:150px;
+    font-size: larger;
+    border-color: aliceblue;
+
+    background-color: aliceblue;
+    box-shadow: 0px 0px 3px 3px rgb(33, 228, 228);
+    animation-name: animateConBtn;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+con1 div{
+    margin-top:20px;
+   align-items: center;
+    margin-left:16px;
+    position:relative;
+    height:200px;
+    width:200px;
+    border:solid aliceblue 2px;
+    box-shadow: 10px 10px 10px 10px lightblue;
+    text-align: center;
+    font-size: large;
+    animation-name: animateDiv;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+   
+}
+@keyframes animateConBtn{
+    0%{ width:150px; border-radius:0px; -webkit-border-radius:0px; -moz-border-radius:0px; -ms-border-radius:0px; -o-border-radius:0px; }
+    100%{ width:300px; border-radius:20px ; }
+}
+@keyframes animateDiv{
+    0%{ width:200px; border-radius:0px; -webkit-border-radius:0px; -moz-border-radius:0px; -ms-border-radius:0px; -o-border-radius:0px; }
+    100%{ width:500px; border-radius:20px ; }
+    
+}
+@keyframes animateConDiv{
+    0%{ width:200px; border-radius:0px; -webkit-border-radius:0px; -moz-border-radius:0px; -ms-border-radius:0px; -o-border-radius:0px; }
+    100%{ width:800px; border-radius:20px ; }
+}
+footer{
+    margin-top:10vh;
+    display:flex;
+    justify-content: center;
+    height:100px;
+    width:100vw;
+    background-color: black;
+    color:white;
+    }
